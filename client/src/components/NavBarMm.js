@@ -7,6 +7,7 @@ import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
 import { NavStyled } from '../css/styles';
+import '../css/fonts.css';
 // import { _debounce, insertNewClass, concat, sortBy, map, sample} from 'lodash';
 
 class NavBarMm extends Component {

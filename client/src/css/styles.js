@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import '../css/fonts.css';
+// import '../css/fonts.css';
 // ------------ v1 ---------------
 export const HeroHeader = styled.div`
   ${'' /* z-index:1000 !important; */}
@@ -13,8 +13,6 @@ export const HeroHeader = styled.div`
   background-size: 100%;
   background-position: center center;
   min-height: 30em;
-  ${'' /* text-align: center; */}
-  ${'' /* padding: 0 7% 10%; */}
   padding: 0;
   margin: 0;
   color: '#FFF';
@@ -34,7 +32,8 @@ export const HeroHeader = styled.div`
   }
 `
 export const HhTextContainer = styled.div`
-  max-width:90%;
+  width: 98%;
+  max-width:98%;
   min-width:51%;
   margin: 0;
   padding: 5% 0 0 6%;
@@ -45,22 +44,26 @@ export const HhTextContainer = styled.div`
   }
 `
 export const HhH1 = styled.div`
-  max-width:90%;
+  width:95%;
+  max-width:95%;
   color: white;
-
-  font-weight: 100;
-  font-size: 5em;
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 1em;
   padding-bottom: 1em;
 `
 export const HhH2 = styled.div`
-  max-width:90%;
+  width: 95%;
+  max-width:95%;
   color: white;
-  font-family: sans-serif;
-  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size: 3em;
+  line-height: 1em;
   padding-bottom: 0.8em;
 `
+
 export const NavStyled = styled.div`
   position: fixed;
   top: 0px;
