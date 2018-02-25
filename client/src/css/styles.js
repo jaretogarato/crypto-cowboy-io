@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import '../css/fonts.css';
 // ------------ v1 ---------------
 export const HeroHeader = styled.div`
   ${'' /* z-index:1000 !important; */}
@@ -32,47 +33,6 @@ export const HeroHeader = styled.div`
     padding: 0 30%;
   }
 `
-export const HeroHeaderTextContainer = styled.div`
-  ${'' /* z-index: 2; */}
-  ${'' /* position: relative; */}
-
-  /* Internet Explorer 10 */
-  ${'' /* display:-ms-flexbox;
-  -ms-flex-pack:center;
-  -ms-flex-align:center; */}
-
-  /* Firefox */
-  ${'' /* display:-moz-box;
-  -moz-box-pack:center;
-  -moz-box-align:center; */}
-
-  /* Safari, Opera, and Chrome */
-  ${'' /* display:-webkit-box;
-  -webkit-box-pack:center;
-  -webkit-box-align:center; */}
-
-  /* W3C */
-  ${'' /* display:box;
-  box-pack:center;
-  box-align:center; */}
-
-  ${'' /* display: block; */}
-  min-height: 10em;
-  overflow: hidden;
-  margin: 0;
-  padding: 5% 0 0 6%;
-  text-align: center;
-
-  :after {
-    content: ' ';
-    clear: both;
-    display: table;
-  }
-
-  @media (max-width: 50em) {
-    padding: 7% 0 0 7%;
-  }
-`
 export const HhTextContainer = styled.div`
   max-width:90%;
   min-width:51%;
@@ -87,9 +47,10 @@ export const HhTextContainer = styled.div`
 export const HhH1 = styled.div`
   max-width:90%;
   color: white;
-  font-family: sans-serif;
+
   font-weight: 100;
   font-size: 5em;
+  font-family: 'Lato', sans-serif;
   padding-bottom: 1em;
 `
 export const HhH2 = styled.div`
@@ -99,31 +60,6 @@ export const HhH2 = styled.div`
   font-weight: 100;
   font-size: 3em;
   padding-bottom: 0.8em;
-`
-export const HeroHeaderH1 = styled.h1`
-  position: relative;
-  color: white;
-  display: block;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 3em;
-  ${'' /* &:after {
-    content: '\a';
-    white-space: pre;
-  } */}
-`
-// h4:after {
-//     content:"\a";
-//     white-space: pre;
-// }
-export const HeroHeaderH2 = styled.h2`
-  clear: both;
-  color: white;
-  display: inline-block;
-  text-align:center;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 2em;
 `
 export const NavStyled = styled.div`
   position: fixed;

@@ -3,9 +3,6 @@ import { Header, Container } from 'semantic-ui-react';
 import TopBg from '../assets/images/top-bg.jpg';
 import {
   HeroHeader,
-  HeroHeaderTextContainer,
-  HeroHeaderH1,
-  HeroHeaderH2,
   HhTextContainer,
   HhH1,
   HhH2,
@@ -16,15 +13,7 @@ class Home extends Component {
     return (
       <Container fluid>
         <HeroHeader bgImage={TopBg}>
-          {/* <HeroHeaderTextContainer>
-            <HeroHeaderH1>
-              Key Message
-            </HeroHeaderH1>
-            <HeroHeaderH2>
-              Supporting Message
-            </HeroHeaderH2>
-          </HeroHeaderTextContainer> */}
-          <HhTextContainer>            
+          <HhTextContainer>
             <HhH1>
               Key Message
             </HhH1>

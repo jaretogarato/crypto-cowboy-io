@@ -57,9 +57,10 @@ class NavBarMm extends Component {
     return (
       // <Sticky enabled={true} top={0} bottomBoundary={1200} onStateChange={handleStateChange}>
       <div>
-        <i ref={(ref) => this.scrollIcon = ref} className="fa fa-2x fa-chevron-down">HOWDY</i>
+
         <NavStyled onStateChange={handleStateChange}>
           <Container>
+            <i ref={(ref) => this.scrollIcon = ref} className="fa fa-2x fa-chevron-down">HOWDY</i>
             <Link to='/'>
             <span>
               Home

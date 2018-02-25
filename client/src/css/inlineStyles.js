@@ -34,7 +34,6 @@ export const styles = {
   cardContentNoTopLine: {
     borderTop: 'none !important',
   },
-
   h3: {
     color: '#FFF',
     fontSize: '2.5em',
