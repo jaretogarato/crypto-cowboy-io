@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // import '../css/fonts.css';
-// ------------ v1 ---------------
+
+// ------------ HeroHeader ---------------
 export const HeroHeader = styled.div`
   ${'' /* z-index:1000 !important; */}
   display: flex;
@@ -32,11 +33,11 @@ export const HeroHeader = styled.div`
   }
 `
 export const HhTextContainer = styled.div`
-  width: 98%;
+  width: 80%;
   max-width:98%;
   min-width:51%;
   margin: 0;
-  padding: 5% 0 0 6%;
+  padding: 7% 10% 5%;
   text-align: center;
 
   @media (max-width: 50em) {
@@ -47,8 +48,7 @@ export const HhH1 = styled.div`
   width:95%;
   max-width:95%;
   color: white;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Gobold', sans-serif;
   font-size: 5em;
   line-height: 1em;
   padding-bottom: 1em;
@@ -57,22 +57,59 @@ export const HhH2 = styled.div`
   width: 95%;
   max-width:95%;
   color: white;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Gobold', sans-serif;
   font-size: 3em;
   line-height: 1em;
   padding-bottom: 0.8em;
 `
 
+// ------------ NavBar ---------------
 export const NavStyled = styled.div`
+  display: flex;
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: 10%;
   z-index: 10000;
-  background:rgba(255, 255, 255 ,0.2);
-  width: 100%;
+  background:rgba(255, 255, 255, 0.0);
+  width: 80%;
+  min-height: 100px;
   padding: 10px 0;
   text-align: right;
+`
+export const NavLogo = styled.div`
+  ${'' /* min-width: 200px; */}
+  ${'' /* min-height: 100px; */}
+  ${'' /* height: 100%; */}
+  width: ${ props => props.logoWidth};
+  min-width: ${ props => props.logoWidth};
+  background-image: url(${ props => props.logoImage}) !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  margin: 0;
+  float:left;
+`
+export const NavLinks = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  ${'' /* border: 1px solid orange; */}
+`
+export const LinkMm = styled.div`
+  height: 1em;
+  ${'' /* color: white; */}
+  font-size: 0.9em;
+  padding-left: 2.2em;
+  display: flex;
+  ${'' /* float: right; */}
+  align-self: center flex-end;
+
+  &:hover {
+    color: #1fccdc;
+  },
 `
 export const FlexContainer = styled.div`
   display: flex;
@@ -87,11 +124,13 @@ export const FlexContent = styled.div`
   width: 100%;
   text-align: center;
 `
+
+// ------------ Footer ---------------
 export const FooterStyled = styled.div`
   flex-shrink: 0;
 `
 
-
+// ------------ defunct ---------------
 export const HeroHeaderTextContainerLeft = styled.div`
   z-index: 2;
   position: relative;

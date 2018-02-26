@@ -1,0 +1,23 @@
+.navlink {
+  color: #1fccdc;
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+}
+.navlink:hover {
+  color: #fff;
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+}
+.navlink-current {
+  color: #fff;
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+}
+.navlink-current:hover {
+  color: #1fccdc;
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+}
+.navlink-error {
+  color: #F00;
+}

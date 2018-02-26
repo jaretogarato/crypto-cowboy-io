@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Container } from 'semantic-ui-react';
 import TopBg from '../assets/images/top-bg.jpg';
-import Footer from './partials/Footer';
 import {
   HeroHeader,
   HhTextContainer,
@@ -9,7 +8,7 @@ import {
   HhH2,
 } from '../css/styles';
 
-class Home extends Component {
+class Press extends Component {
   render() {
     return (
       <Container fluid>
@@ -25,7 +24,7 @@ class Home extends Component {
         </HeroHeader>
 
         <Container>
-          <Header as='h1' textAlign='center'>Home Component</Header>
+          <Header as='h1' textAlign='center'>Press Component</Header>
           <p>
             Here,   <br />
             among the market vegetables, <br />
@@ -117,10 +116,9 @@ class Home extends Component {
             the waters of death.<br />
           </p>
         </Container>
-        <Footer />
       </Container>
     );
   }
 }
 
-export default Home;
+export default Press;

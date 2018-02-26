@@ -1,5 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i'); */
 /* usage: font-family: 'Lato', sans-serif; */
+
+@font-face {
+    font-family: 'Gobold';
+    src:url('../assets/fonts/Gobold.ttf.woff') format('woff'),
+        url('../assets/fonts/Gobold.ttf.svg#Gobold') format('svg'),
+        url('../assets/fonts/Gobold.ttf.eot'),
+        url('../assets/fonts/Gobold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* lato-300 - latin */
 @font-face {

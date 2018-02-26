@@ -2,7 +2,7 @@ import React from 'react';
 import { Segment, Image, Container, Grid, Icon, List } from 'semantic-ui-react';
 import { styles } from '../../css/inlineStyles';
 import '../../css/styles.js';
-import LogoMed from '../../assets/images/ims-logo-med.png';
+// import LogoMed from '../../assets/images/ims-logo-med.png';
 
 class Footer extends React.Component {
   render() {
@@ -11,27 +11,24 @@ class Footer extends React.Component {
         <Grid padded stackable>
           <Grid.Row />
           <Grid.Row>
-            <Grid.Column width={11}>
-              <Image size='medium' src={LogoMed} />
-            </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column width={16}>
               <List>
                 <List.Item style={styles.lightGrayText} >
                   <List.Icon name='map pin' />
                   <List.Content>
-                    251 Bagley Street<br />
-                    Mare Island, CA 94592<br />
+                    1520 Windhaven Circle <br />
+                    Las Vegas, NV 89117<br />
                   </List.Content>
                 </List.Item>
                 <List.Item
                   icon='phone'
                   style={styles.lightGrayText}
-                  content='707-935-2500'
+                  content='888-555-1212'
                 />
                 <List.Item style={styles.lightGrayText}>
                   <List.Icon name='mail outline' />
                   <List.Content>
-                    info@intermodalstructures.com
+                    info@cryptocowbow.io
                   </List.Content>
                 </List.Item>
               </List>
@@ -40,7 +37,7 @@ class Footer extends React.Component {
           <Grid.Row>
             <Grid.Column width={11}>
               <Segment basic style={styles.lightGrayText}>
-                High Performance Buildings Anywhere<br />&nbsp;<br />
+                Copyright / Disclaimer go here<br />&nbsp;<br />
               </Segment>
             </Grid.Column>
             <Grid.Column width={5}>

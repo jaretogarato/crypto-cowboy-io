@@ -6,7 +6,12 @@ import Login from './Login';
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
-import About from './About';
+import Clients from './Clients';
+import Why from './Why';
+import Services from './Services';
+import Regulatory from './Regulatory';
+import Press from './Press';
+import Contact from './Contact';
 import '../css/fonts.css';
 import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
@@ -23,7 +28,13 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
+            <Route path='/clients' component={Clients} />
+            {/* <Route path='/why' component={Why} /> */}
+            <Route path='/services' component={Services} />
+            <Route path='/regulatory' component={Regulatory} />
+            <Route path='/press' component={Press} />
+            <Route path='/contact' component={Contact} />
+
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />
