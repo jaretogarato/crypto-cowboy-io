@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-// import '../css/fonts.css';
+
+// @mixin for-phone-only: (max-width: 599px)
+// @mixin for-tablet-portrait-up: (min-width: 600px)
+// @mixin for-tablet-landscape-up: (min-width: 900px)
+// @mixin for-desktop-up: (min-width: 1200px)
+// @mixin for-big-desktop-up: (min-width: 1800px)
 
 // ------------ HeroHeader ---------------
 export const HeroHeader = styled.div`
@@ -13,54 +18,85 @@ export const HeroHeader = styled.div`
   background-size: 100%;
   background-position: center center;
   min-height: 30em;
+  width: 100%;
   padding: 0;
   margin: 0;
   color: '#FFF';
 
-  @media (max-width: 64em) {
+  @media (max-width: 599px) {
+    background-size: 180%;
+    min-height: 20em;
+    padding: 10%, 5%;
+    ${'' /* margin-left: -10%; */}
+  }
+  @media (min-width: 600px) {
+    ${'' /* top: 20%; */}
+    width: 160%;
+    margin-left: -30%;
+    padding: 0 20%;
+  }
+  @media (min-width: 900px) {
     top: 10%;
     width: 120%;
     margin-left: -10%;
     padding: 0 10%;
   }
-
-  @media (max-width: 50em) {
-    top: 20%;
-    width: 160%;
-    margin-left: -30%;
-    padding: 0 30%;
+  @media (min-width: 1200px) {
+  }
+  @media (min-width: 1800px) {
   }
 `
 export const HhTextContainer = styled.div`
-  width: 80%;
-  max-width:98%;
-  min-width:51%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   margin: 0;
-  padding: 7% 10% 5%;
-  text-align: center;
+  padding: 0;
+  ${'' /* text-align: center; */}
+  ${'' /* justify-content: center; */}
 
-  @media (max-width: 50em) {
-    padding: 7% 0 0 7%;
+  @media (max-width: 599px) {
+    ${'' /* margin: 15% 3%; */}
   }
 `
-export const HhH1 = styled.div`
-  width:95%;
-  max-width:95%;
+export const HhH1 = styled.h1`
+  ${'' /* width:100%; */}
+  ${'' /* max-width:95%; */}
   color: white;
   font-family: 'Gobold', sans-serif;
-  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 90px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
   ${'' /* line-height: 1em; */}
-  padding-bottom: 1em;
+  ${'' /* padding-bottom: 1em; */}
+
+  @media (max-width: 599px) {
+    font-size: 65px;
+    height: 65px;
+  }
 `
-export const HhH2 = styled.div`
-  width: 95%;
-  max-width:95%;
+export const HhH2 = styled.h2`
+  ${'' /* width: 100%; */}
+  ${'' /* max-width:95%; */}
   height: auto;
   color: white;
   font-family: 'Gobold', sans-serif;
-  font-size: 3em;
+  text-align: center;
+  font-size: 55px;
+  height: 55px;
+  margin: 0;
+  padding: 0;
   ${'' /* line-height: 1em; */}
-  padding-bottom: 0.8em;
+  ${'' /* padding-bottom: 0.8em; */}
+
+  @media (max-width: 599px) {
+    font-size: 35px;
+    height: 35px;
+  }
 `
 
 // ------------ NavBar ---------------

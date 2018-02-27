@@ -19,7 +19,7 @@ class Home extends Component {
               We Make Blockchain
             </HhH2>
             <HhH1>
-              Easy
+              EASY
             </HhH1>
           </HhTextContainer>
         </HeroHeader>

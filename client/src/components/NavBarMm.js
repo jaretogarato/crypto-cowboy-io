@@ -53,10 +53,6 @@ class NavBarMm extends Component {
     this.setState({
       currentRoute: currentRoute,
     });
-    // console.log('----------------');
-    // console.log('currentRoute: ' + currentRoute);
-    // console.log('currentRoute in state: ' + this.state.currentRoute);
-    // console.log('----------------');
   }
 
   isRouteCurrent = (route) => {
