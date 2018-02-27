@@ -11,6 +11,7 @@ import Services from './Services';
 import Regulatory from './Regulatory';
 import Press from './Press';
 import Contact from './Contact';
+import Success from './Success';
 import '../css/fonts.css';
 import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path='/regulatory' component={Regulatory} />
             <Route path='/press' component={Press} />
             <Route path='/contact' component={Contact} />
+            <Route path='/success' component={Success} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />

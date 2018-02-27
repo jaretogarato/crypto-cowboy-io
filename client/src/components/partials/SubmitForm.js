@@ -16,7 +16,7 @@ class SubmitForm extends Component {
     event.preventDefault();
     const { title, firstName, lastName, phone, phoneType, email, state, city, insuranceCompany } = this.state;
     const { dispatch, history } = this.props;
-    debugger;
+    // debugger;
 
     // TODO: better error checking
     if (firstName === '') {

@@ -17,7 +17,7 @@ class Footer extends React.Component {
           <Grid padded stackable>
 
             <Grid.Row>
-              <Grid.Column centered width={16}>
+              <Grid.Column width={16}>
                 <span style={inlineStyles.lightGrayTextPadLeftCenter}>
                   <p>
                     <Icon name='map pin' />
