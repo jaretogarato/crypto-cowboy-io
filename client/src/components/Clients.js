@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { Header, Container } from 'semantic-ui-react';
+import { Header, Container, Card, Icon, Image } from 'semantic-ui-react';
 import TopBg from '../assets/images/top-bg.jpg';
 import Footer from './partials/Footer';
+import LogoSunPacific from '../assets/images/sun-pacific.png';
+import LogoMoneyTrac from '../assets/images/mtrac.png';
+import LogoUSGold from '../assets/images/us-gold.png';
+import LogoOpenNetwork from '../assets/images/on-blue-shadow.png';
 import {
   HeroHeader,
   HhTextContainer,
@@ -27,18 +31,68 @@ class Clients extends Component {
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' textAlign='center'>Clients</Header>
-          <p>
-            Sun Pacific Power Corp (Logo), link to their website or press release
-          </p>
-          <p>
-            MoneyTrac (Logo or link to their website)
-          </p>
-          <p>
-            USGold (Logo or link to their website)
-          </p>
-          <p>
-            OpenNetwork.Exchange
-          </p>
+          <Card.Group itemsPerRow={3} centered>
+            <Card>
+              <Image src={LogoSunPacific} />
+              <Card.Content>
+                <Card.Header>
+                  <a href="http://sunpacificpower.com/">Sun Pacific Power Corp</a></Card.Header>
+                {/* <Card.Meta>Joined in 2016</Card.Meta> */}
+                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+              </Card.Content>
+              {/* <Card.Content extra>
+                <a>
+                  <Icon name='user' />
+                  10 Friends
+                </a>
+              </Card.Content> */}
+            </Card>
+            <Card>
+              <Image src={LogoMoneyTrac} />
+              <Card.Content>
+                <Card.Header>
+                  <a href="https://www.moneytractechnology.com/">MoneyTrac</a></Card.Header>
+                {/* <Card.Meta>Joined in 2016</Card.Meta> */}
+                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+              </Card.Content>
+              {/* <Card.Content extra>
+                <a>
+                  <Icon name='user' />
+                  10 Friends
+                </a>
+              </Card.Content> */}
+            </Card>
+            <Card>
+              <Image src={LogoUSGold} />
+              <Card.Content>
+                <Card.Header>
+                  <a href="http://www.usgoldinc.com/">US Gold</a></Card.Header>
+                {/* <Card.Meta>Joined in 2016</Card.Meta> */}
+                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+              </Card.Content>
+              {/* <Card.Content extra>
+                <a>
+                  <Icon name='user' />
+                  10 Friends
+                </a>
+              </Card.Content> */}
+            </Card>
+            <Card>
+              <Image src={LogoOpenNetwork} />
+              <Card.Content>
+                <Card.Header>
+                  <a href="http://www.opennetwork.exchange/">Open Network Exchange</a></Card.Header>
+                {/* <Card.Meta>Joined in 2016</Card.Meta> */}
+                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+              </Card.Content>
+              {/* <Card.Content extra>
+                <a>
+                  <Icon name='user' />
+                  10 Friends
+                </a>
+              </Card.Content> */}
+            </Card>
+          </Card.Group>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' /> {/* vertical whitespace */}
         </Container>

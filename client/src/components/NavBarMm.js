@@ -11,7 +11,7 @@ import '../css/fonts.css';
 import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 
 class NavBarMm extends Component {
-  state = {transform: 0.0, navBgOpacity: 0.0, navBgHeight: 100, currentRoute: '/'};
+  state = {transform: 0.0, navBgOpacity: 1.0, navBgHeight: 100, currentRoute: '/'};
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -76,7 +76,7 @@ class NavBarMm extends Component {
               <img src={LogoImage} style={inlineStyles.logoNav} />
             </a>
           </div>
-          <NavLinks>
+          <NavLinks navOpacity={this.state.navBgOpacity}>
             {/* <i ref={(ref) => this.scrollIcon = ref} className="fa fa-2x fa-chevron-down">HOWDY</i> */}
             <NavLink name='Home' to='/' isCurrent={this.isRouteCurrent('/')} />
             <NavLink name='Clients' to='/clients' isCurrent={this.isRouteCurrent('/clients')} />

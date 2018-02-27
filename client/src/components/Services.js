@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Container } from 'semantic-ui-react';
+import { Header, Container, Grid, Icon } from 'semantic-ui-react';
 import TopBg from '../assets/images/top-bg.jpg';
 import Footer from './partials/Footer';
 import {
@@ -27,9 +27,18 @@ class Services extends Component {
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' textAlign='center'>Service Offerings</Header>
-          <p>
-            CryptoCowboy is a fully turnkey vertical solutions provider to make your coin or token business come alive.  From Pre-design, Business Plan & Requirements, Development, Deployment, Support, Legal Guidance and Marketing, our team takes full ownership of your offering and ensures it is managed, maintained, and adheres to all regulatory requirements to ensure your success.
-          </p>
+          <Grid>
+            <Grid.Row>
+              <Grid.Column width={4}>
+                <Icon name='settings' size='massive' color='grey' />
+              </Grid.Column>
+              <Grid.Column width={12}>
+                <p>
+                  CryptoCowboy is a fully turnkey vertical solutions provider to make your coin or token business come alive.  From Pre-design, Business Plan & Requirements, Development, Deployment, Support, Legal Guidance and Marketing, our team takes full ownership of your offering and ensures it is managed, maintained, and adheres to all regulatory requirements to ensure your success.
+                </p>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' /> {/* vertical whitespace */}
         </Container>

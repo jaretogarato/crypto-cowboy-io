@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Header, Container } from 'semantic-ui-react';
+import { Header, Container, Grid } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-home.jpg';
+import Cowboy from '../assets/images/cowboy.jpg';
 import Footer from './partials/Footer';
 import {
   HeroHeader,
@@ -26,10 +27,19 @@ class Home extends Component {
 
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
-          <Header as='h1' textAlign='center'>Crypto Cowboy</Header>
-          <p>
-            By using our proprietary blockchain technology specifically designed for financial services, CryptoCowboy can take the world of contracts and certificates and turn them into an efficient, fast, and secure way of managing ownership of your assets.
-          </p>
+          <Header as='h1' textAlign='center'>Introducing Crypto Cowboy</Header>
+          <Grid>
+            <Grid.Row>
+              <Grid.Column width={8}>
+                <img src={Cowboy} />
+              </Grid.Column>
+              <Grid.Column width={8}>
+                <p>
+                  By using our proprietary blockchain technology specifically designed for financial services, CryptoCowboy can take the world of contracts and certificates and turn them into an efficient, fast, and secure way of managing ownership of your assets.
+                </p>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' /> {/* vertical whitespace */}
         </Container>
