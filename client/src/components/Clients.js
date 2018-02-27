@@ -15,12 +15,12 @@ class Clients extends Component {
       <Container fluid>
         <HeroHeader bgImage={TopBg}>
           <HhTextContainer>
-            <HhH1>
-              Key Message
-            </HhH1>
             <HhH2>
-              Supporting Message
+              We Love
             </HhH2>
+            <HhH1>
+              Our Clients
+            </HhH1>
           </HhTextContainer>
         </HeroHeader>
 

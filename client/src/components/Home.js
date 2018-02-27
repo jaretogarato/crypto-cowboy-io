@@ -15,12 +15,12 @@ class Home extends Component {
       <Container fluid id={0}>
         <HeroHeader bgImage={TopBg}>
           <HhTextContainer>
-            <HhH1>
-              Key Message
-            </HhH1>
             <HhH2>
-              Supporting Message
+              We Make Blockchain
             </HhH2>
+            <HhH1>
+              Easy
+            </HhH1>
           </HhTextContainer>
         </HeroHeader>
 

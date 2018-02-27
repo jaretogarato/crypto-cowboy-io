@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Header, Form, Button, Segment, Dropdown, Grid, Container, TextArea } from 'semantic-ui-react';
-import { connect } from 'react-redux';
-import { addLead } from '../../actions/leads';
+// import { connect } from 'react-redux';
+// import { addLead } from '../../actions/leads';
 import { flash } from '../../actions/flash';
 import { setFlash } from '../../actions/flash';
 import { inlineStyles } from '../../css/inlineStyles.js';
-import { titleOptions, phoneTypeOptions, stateOptions } from './FormOptions.js';
+// import { titleOptions, phoneTypeOptions, stateOptions } from './FormOptions.js';
+import { titleOptions } from './FormOptions.js';
 import { withRouter } from 'react-router-dom';
 
 class SubmitForm extends Component {
@@ -14,11 +15,11 @@ class SubmitForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const { title, first_name, last_name, phone, email, message } = this.state;
+    const { title, first_name, last_name, phone, email } = this.state;
     const { dispatch, history } = this.props;
 
     // TODO: better error checking
-    if (first_name === '') {
+    if (first_name === '' || last_name === '') {
       console.log('Please complete all fields');
     } else {
       axios.post('/api/leads', this.state)
@@ -58,7 +59,16 @@ class SubmitForm extends Component {
       <Container fluid style={inlineStyles.lightGrayBg}>
         <Container>
           <br />
-          <Header as='h1' textAlign='center' style={inlineStyles.whiteText}>Tell me more!</Header>
+          <Grid>
+            <Grid.Row>
+              <Grid.Column width={3} />
+              <Grid.Column width={10}>
+                <Header as='h3' textAlign='center' style={inlineStyles.whiteText}>Send us your questions or comments, and someone will be in touch with you as soon as possible.</Header>
+                <Header as='h1' />
+              </Grid.Column>
+              <Grid.Column width={3} />
+            </Grid.Row>
+          </Grid>
           <Form onSubmit={this.handleSubmit}>
             <Grid padded>
               <Grid.Row>

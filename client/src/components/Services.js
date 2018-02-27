@@ -15,12 +15,12 @@ class Services extends Component {
       <Container fluid>
         <HeroHeader bgImage={TopBg}>
           <HhTextContainer>
-            <HhH1>
-              Key Message
-            </HhH1>
             <HhH2>
-              Supporting Message
+              How Can
             </HhH2>
+            <HhH1>
+              We Help?
+            </HhH1>
           </HhTextContainer>
         </HeroHeader>
 

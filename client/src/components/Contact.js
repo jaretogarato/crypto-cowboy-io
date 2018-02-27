@@ -16,18 +16,21 @@ class Contact extends Component {
       <Container fluid>
         <HeroHeader bgImage={TopBg}>
           <HhTextContainer>
-            <HhH1>
-              Contact Us
-            </HhH1>
             <HhH2>
-              We'd love to hear from you
+              Contact
             </HhH2>
+            <HhH1>
+              Us
+            </HhH1>
           </HhTextContainer>
         </HeroHeader>
 
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' />
+          <Header as='h1' textAlign='center'>
+            We'd love to hear from you.
+          </Header>
           <Container fluid>
             <Grid>
               <Grid.Row>
