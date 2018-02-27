@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavStyled, NavLogo, NavLinks, LinkMm } from '../css/styles';
+import { NavStyled, NavLogo, NavLinks, LinkMm } from '../css/styledComponents';
 import '../css/styles.css';
 
 class NavLink extends Component {
@@ -31,7 +31,7 @@ class NavLink extends Component {
   }
 
   // showHoverStyle = () => {
-  //   this.style = styles.linkTextHover;
+  //   this.style = inlineStyles.linkTextHover;
   // }
 
   render() {
@@ -43,7 +43,7 @@ class NavLink extends Component {
   }
 }
 
-// const styles = {
+// const inlineStyles = {
 //   linkText: {
 //     color: 'white',
 //   },

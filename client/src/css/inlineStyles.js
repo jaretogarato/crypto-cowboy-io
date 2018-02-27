@@ -1,7 +1,7 @@
 import React from 'react';
 // import PageHeaderMountains from '../images/mountains.jpg';
 
-export const styles = {
+export const inlineStyles = {
   h1Left: {
     textAlign: 'left',
     verticalAlign: 'top',
@@ -105,8 +105,14 @@ export const styles = {
     textColor: '#FFF',
   },
   lightGrayText: {
-    color: '#828fa7',
-    textColor: '#828fa7',
+    color: '#929F92',
+    textColor: '#929F92',
+  },
+  lightGrayTextPadLeftCenter: {
+    color: '#929F92',
+    textColor: '#929F92',
+    paddingLeft: '2em',
+    textAlign: 'center',
   },
   lightGrayBg: {
     backgroundColor: '#5D5D5D',
@@ -118,6 +124,9 @@ export const styles = {
     backgroundColor: '#DDD',
     padding: '25px',
     textAlign: 'center',
+  },
+  darkGrayBg: {
+    backgroundColor: '#444',
   },
   buyGreenBg: {
     backgroundColor: '#38c500',
@@ -134,5 +143,8 @@ export const styles = {
     paddingRight: '40px',
     backgroundColor: '#F6E8B3',
     textAlign: 'center',
+  },
+  footerSpacerTop: {
+    height: '5em',
   },
 }

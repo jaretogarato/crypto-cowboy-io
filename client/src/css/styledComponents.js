@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 // ------------ HeroHeader ---------------
 export const HeroHeader = styled.div`
-  ${'' /* z-index:1000 !important; */}
   display: flex;
   align-items: center;
   justify-content: center;

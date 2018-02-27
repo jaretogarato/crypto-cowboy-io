@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { addLead } from '../../actions/leads';
 import { flash } from '../../actions/flash';
 import { setFlash } from '../../actions/flash';
-import { styles } from '../../css/inlineStyles.js';
+import { inlineStyles } from '../../css/inlineStyles.js';
 import { titleOptions, phoneTypeOptions, stateOptions } from './FormOptions.js';
 import { withRouter } from 'react-router-dom';
 
@@ -60,14 +60,14 @@ class SubmitForm extends Component {
     const { title, firstName, lastName, phone, phoneType, email, state, city, insuranceCompany } = this.state;
 
     return (
-      <Container fluid style={styles.lightGrayBg}>
+      <Container fluid style={inlineStyles.lightGrayBg}>
         <Container>
           <br />
-          <Header as='h1' textAlign='center' style={styles.whiteText}>Tell me more!</Header>
+          <Header as='h1' textAlign='center' style={inlineStyles.whiteText}>Tell me more!</Header>
           <Form onSubmit={this.handleSubmit}>
-            <Grid>
+            <Grid padded>
               <Grid.Row>
-                <Grid.Column width={2} style={styles.whiteText}>
+                <Grid.Column width={2} style={inlineStyles.whiteText}>
                   <Dropdown
                     id='title'
                     placeholder='Title'

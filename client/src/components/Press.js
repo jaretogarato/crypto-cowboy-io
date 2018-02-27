@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Header, Container } from 'semantic-ui-react';
 import TopBg from '../assets/images/top-bg.jpg';
+import Footer from './partials/Footer';
 import {
   HeroHeader,
   HhTextContainer,
   HhH1,
   HhH2,
-} from '../css/styles';
+} from '../css/styledComponents';
 
 class Press extends Component {
   render() {
@@ -24,6 +25,7 @@ class Press extends Component {
         </HeroHeader>
 
         <Container>
+          <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' textAlign='center'>Press Component</Header>
           <p>
             Here,   <br />
@@ -115,7 +117,10 @@ class Press extends Component {
             navigating now <br />
             the waters of death.<br />
           </p>
+          <Header as='h1' /> {/* vertical whitespace */}
+          <Header as='h1' /> {/* vertical whitespace */}
         </Container>
+        <Footer />
       </Container>
     );
   }

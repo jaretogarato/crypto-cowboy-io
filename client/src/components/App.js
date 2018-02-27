@@ -7,7 +7,6 @@ import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
 import Clients from './Clients';
-import Why from './Why';
 import Services from './Services';
 import Regulatory from './Regulatory';
 import Press from './Press';
@@ -29,12 +28,10 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/clients' component={Clients} />
-            {/* <Route path='/why' component={Why} /> */}
             <Route path='/services' component={Services} />
             <Route path='/regulatory' component={Regulatory} />
             <Route path='/press' component={Press} />
             <Route path='/contact' component={Contact} />
-
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />

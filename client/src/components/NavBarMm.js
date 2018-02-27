@@ -6,7 +6,7 @@ import Sticky from 'react-sticky-el';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
-import { NavStyled, NavLogo, NavLinks } from '../css/styles';
+import { NavStyled, NavLogo, NavLinks } from '../css/styledComponents';
 import NavLink from './NavLink';
 import '../css/fonts.css';
 import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
@@ -15,12 +15,13 @@ import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 class NavBarMm extends Component {
   state = {transform: 0.0, navBgOpacity: 0.0, navBgHeight: 100, currentRoute: '/'};
 
-  componentDidMount () {
+  componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.scrollTo(0, 0);
     this.getRoute();
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
   }
 
@@ -76,14 +77,11 @@ class NavBarMm extends Component {
       <Container>
         {/* <NavStyled onStateChange={handleStateChange}> */}
         <NavStyled>
-          {/* <Container> */}
             <NavLogo logoImage={LogoImage} logoWidth={'253px'} />
-            {/* <Container style={styles.containerFlexFloatLeft}> */}
             <NavLinks>
               {/* <i ref={(ref) => this.scrollIcon = ref} className="fa fa-2x fa-chevron-down">HOWDY</i> */}
               <NavLink name='Home' to='/' isCurrent={this.isRouteCurrent('/')} />
               <NavLink name='Clients' to='/clients' isCurrent={this.isRouteCurrent('/clients')} />
-              {/* <NavLink name='Why' to='/why' /> */}
               <NavLink name='Services' to='/services' isCurrent={this.isRouteCurrent('/services')} />
               <NavLink name='Regulatory' to='/regulatory' isCurrent={this.isRouteCurrent('/regulatory')} />
               <NavLink name='Press' to='/press' isCurrent={this.isRouteCurrent('/press')} />
@@ -96,79 +94,6 @@ class NavBarMm extends Component {
       // </Sticky>
     )
   }
-}
-
-// class NavBarMm extends Component {
-//   state = {style:[], isSticky:true, wasSticky:true, distanceFromTop:0, distanceFromBottom:5000, calculatedHeight:100};
-//
-//   render() {
-//     const {style, isSticky, wasSticky, distanceFromTop, distanceFromBottom, calculatedHeight} = this.state;
-//
-//     return (
-//       <StickyContainer style={styles.stickyContainer}>
-//         <Sticky topOffset={80}>
-//           {
-//             ({
-//               style,
-//               // the following are also available but unused in this example
-//               // isSticky,
-//               // wasSticky,
-//               // distanceFromTop,
-//               // distanceFromBottom,
-//               // calculatedHeight
-//             }) => {
-//               return (
-//                 <Container fluid>
-//                   <Link to='/'>
-//                     <span style={style}>
-//                       Home
-//                     </span>
-//                   </Link>
-//                   <Link to='about'>
-//                     <span style={style}>
-//                       About
-//                     </span>
-//                   </Link>
-//                   <Link to='contact'>
-//                     <span style={style}>
-//                       Contact
-//                     </span>
-//                   </Link>
-//                 </Container>
-//               )
-//             }
-//           }
-//         </Sticky>
-//       </StickyContainer>
-//     );
-//   }
-// }
-
-const styles = {
-  stickyContainer: {
-    padding: '5%',
-    border: '1px solid',
-    // float: 'left',
-  },
-  linkWhiteFlexEnd: {
-    color: 'white',
-    fontSize: '1em',
-    paddingLeft: '3em',
-    // flexDirection: 'column',
-    // justifyContent: 'flex-end',
-  },
-  containerFlexFloatLeft: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    float: 'left',
-    border: '1px solid orange',
-  },
-  linkFlexRight: {
-    justifyContent: 'flex-end',
-  },
-  floatLeft: {
-    float: 'left',
-  },
 }
 
 const mapStateToProps = state => {
