@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Header, Grid, Container, Segment, Image, List, Item, Divider, Card } from 'semantic-ui-react';
-
 import TopBg from '../assets/images/top-bg.jpg';
 import {
   HeroHeader,

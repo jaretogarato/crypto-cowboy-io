@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Header, Form, Button, Segment, Dropdown, Grid, Container } from 'semantic-ui-react';
+import { Header, Form, Button, Segment, Dropdown, Grid, Container, TextArea } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { addLead } from '../../actions/leads';
 import { flash } from '../../actions/flash';
@@ -10,25 +10,19 @@ import { titleOptions, phoneTypeOptions, stateOptions } from './FormOptions.js';
 import { withRouter } from 'react-router-dom';
 
 class SubmitForm extends Component {
-  state = { title: '', firstName: '', lastName: '', phone: '', phoneType: '', email: '', state: '', city: '', insuranceCompany: '' }
+  state = { title: '', first_name: '', last_name: '', phone: '', email: '', message: '' }
 
   handleSubmit = event => {
     event.preventDefault();
-    const { title, firstName, lastName, phone, phoneType, email, state, city, insuranceCompany } = this.state;
+    const { title, first_name, last_name, phone, email, message } = this.state;
     const { dispatch, history } = this.props;
-    // debugger;
 
     // TODO: better error checking
-    if (firstName === '') {
+    if (first_name === '') {
       console.log('Please complete all fields');
     } else {
       axios.post('/api/leads', this.state)
       .then(function (res) {
-        // window.location = res.data.redirect;
-        // history.push(`./${res.data.id}`);
-        // history.push(`./leads/${res.data.id}`);
-        // window.location = '/success';
-        // this.props.history.push('/success');
         history.push('/success');
       })
       .catch( err => {
@@ -38,13 +32,14 @@ class SubmitForm extends Component {
   }
 
   handleChange = event => {
-    // use e to grab the id off the element also the value and set state
+    // use 'event' to grab the id off the element also the value and set state
     // const { id, value } = event.target;
     const id = event.target.id;
     const value = event.target.value;
     this.setState({ [id]: value });
     console.log(this.state);
   }
+
   handleOptionChange = event => {
     const id = event.target.id;
     const value = event.target.value;
@@ -57,7 +52,7 @@ class SubmitForm extends Component {
   }
 
   render() {
-    const { title, firstName, lastName, phone, phoneType, email, state, city, insuranceCompany } = this.state;
+    const { title, first_name, last_name, phone, email, message } = this.state;
 
     return (
       <Container fluid style={inlineStyles.lightGrayBg}>
@@ -67,45 +62,42 @@ class SubmitForm extends Component {
           <Form onSubmit={this.handleSubmit}>
             <Grid padded>
               <Grid.Row>
-                <Grid.Column width={2} style={inlineStyles.whiteText}>
+                <Grid.Column width={3} style={inlineStyles.whiteText}>
                   <Dropdown
                     id='title'
                     placeholder='Title'
                     fluid
                     selection
                     required
-                    search
                     options={titleOptions}
                     onChange={this.handleOptionChange}
-                  >
-
-                  </Dropdown>
+                  />
                 </Grid.Column>
                 <Grid.Column width={7}>
                   <Form.Field>
                     <input
-                      id='firstName'
+                      id='first_name'
                       placeholder='First Name'
                       required
-                      value={firstName}
+                      value={first_name}
                       onChange={this.handleChange}
                     />
                   </Form.Field>
                 </Grid.Column>
-                <Grid.Column width={7}>
+                <Grid.Column width={6}>
                   <Form.Field>
                     <input
-                      id='lastName'
+                      id='last_name'
                       placeholder='Last Name'
                       required
-                      value={lastName}
+                      value={last_name}
                       onChange={this.handleChange}
                     />
                   </Form.Field>
                 </Grid.Column>
               </Grid.Row>
               <Grid.Row>
-                <Grid.Column width={7}>
+                <Grid.Column width={9}>
                   <Form.Field>
                     <input
                       id='email'
@@ -116,7 +108,7 @@ class SubmitForm extends Component {
                     />
                   </Form.Field>
                 </Grid.Column>
-                <Grid.Column width={5}>
+                <Grid.Column width={7}>
                   <Form.Field>
                     <input
                       id='phone'
@@ -127,51 +119,16 @@ class SubmitForm extends Component {
                     />
                   </Form.Field>
                 </Grid.Column>
-                <Grid.Column width={4}>
-                  <Dropdown
-                    id='phoneType'
-                    placeholder='Phone Type'
-                    fluid
-                    selection
-                    required
-                    options={phoneTypeOptions}
-                    onChange={this.handleChange}
-                  />
-                </Grid.Column>
               </Grid.Row>
-              <Grid.Row >
-                <Grid.Column width={2}>
-                  <Dropdown
-                    id='state'
-                    placeholder='State'
-                    fluid
-                    selection
-                    required
-                    options={stateOptions}
+              <Grid.Row>
+                <Grid.Column width={16}>
+                  <Form.Field
+                    id='message'
+                    placeholder='Enter your message here...'
+                    value={message}
+                    control={TextArea}
                     onChange={this.handleChange}
                   />
-                </Grid.Column>
-                <Grid.Column width={7}>
-                  <Form.Field>
-                    <input
-                      id='city'
-                      placeholder='City of your property'
-                      required
-                      value={city}
-                      onChange={this.handleChange}
-                    />
-                  </Form.Field>
-                </Grid.Column>
-                <Grid.Column width={7}>
-                  <Form.Field>
-                    <input
-                      id='insuranceCompany'
-                      placeholder='Insurance Company'
-                      required
-                      value={insuranceCompany}
-                      onChange={this.handleChange}
-                    />
-                  </Form.Field>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
@@ -186,6 +143,4 @@ class SubmitForm extends Component {
   }
 }
 
-// export default connect()(SubmitForm);
-// export default SubmitForm;
 export default withRouter(SubmitForm);

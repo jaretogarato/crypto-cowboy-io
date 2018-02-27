@@ -17,17 +17,17 @@ class Contact extends Component {
         <HeroHeader bgImage={TopBg}>
           <HhTextContainer>
             <HhH1>
-              Key Message
+              Contact Us
             </HhH1>
             <HhH2>
-              Supporting Message
+              We'd love to hear from you
             </HhH2>
           </HhTextContainer>
         </HeroHeader>
 
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
-          <Header as='h1' textAlign='center'>Contact Component</Header>
+          <Header as='h1' />
           <Container fluid>
             <Grid>
               <Grid.Row>

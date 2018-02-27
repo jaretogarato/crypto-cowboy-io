@@ -26,7 +26,10 @@ class NavBarMm extends Component {
   }
 
   handleScroll = (event) => {
-    let scrollTop = event.srcElement.body.scrollTop; // ***
+    // let scrollTop = event.srcElement.body.scrollTop;
+    let rootContainer = document.getElementById("root");
+    console.log(rootContainer);
+    let scrollTop = rootContainer.scrollTop;
     let itemTranslate = Math.min(0, scrollTop/3 - 60);
 
     this.setState({
@@ -49,6 +52,20 @@ class NavBarMm extends Component {
     console.log('this.state.navBgHeight: ' + this.state.navBgHeight);
     this.getRoute();
   }
+
+  // handleScroll() {
+  //   var winHeight = window.innerHeight;
+  //
+  //   // Annoying to compute doc height due to browser inconsistency
+  //   var body = document.body;
+  //   var html = document.documentElement;
+  //   var docHeight = Math.max( body.scrollHeight, body.offsetHeight,
+  //                  html.clientHeight, html.scrollHeight, html.offsetHeight );
+  //
+  //   var value = document.body.scrollTop;
+  //   console.log ("Scroll position: " + value);
+  //   console.log ("Container node offset:" + containerNode.scrollTop);
+  // }
 
   getRoute = () => {
     var currentRoute = this.props.location.pathname;

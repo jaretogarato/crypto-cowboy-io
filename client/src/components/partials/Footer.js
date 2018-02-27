@@ -26,7 +26,7 @@ class Footer extends React.Component {
                   </p>
                   <p>
                     <Icon name='mail outline' />
-                    info@cryptocowbow.io
+                    info@cryptocowboy.io
                   </p>
                   <p>
                     Copyright © 2018 Crypto Cowboy<br />

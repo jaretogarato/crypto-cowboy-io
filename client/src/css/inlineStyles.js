@@ -83,23 +83,6 @@ export const inlineStyles = {
     paddingRight: '10%',
     textAlign: 'center',
   },
-  logo: {
-    height: '100px',
-  },
-  orangeBg: {
-    backgroundColor: '#e54836',
-    padding: '25px',
-    textAlign: 'center',
-  },
-  greenBg: {
-    backgroundColor: '#2f8d83',
-    padding: '25px',
-    textAlign: 'center',
-  },
-  blueGrayBg: {
-    backgroundColor: '#404d5e',
-    padding: '25px',
-  },
   whiteText: {
     color: '#FFF',
     textColor: '#FFF',
@@ -115,7 +98,7 @@ export const inlineStyles = {
     textAlign: 'center',
   },
   lightGrayBg: {
-    backgroundColor: '#5D5D5D',
+    backgroundColor: '#9D9D9D',
     padding: '5px',
     marginTop: '25px',
     marginBottom: '25px',

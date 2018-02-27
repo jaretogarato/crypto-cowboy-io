@@ -36,7 +36,7 @@ class Api::LeadsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def api_lead_params
-      params.require(:lead).permit(:firstName, :lastName, :email, :phone, :city, :insuranceCompany)
+      params.require(:lead).permit(:title, :first_name, :last_name, :email, :phone, :message)
     end
 
 end

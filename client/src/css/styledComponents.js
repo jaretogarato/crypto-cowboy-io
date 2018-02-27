@@ -49,16 +49,17 @@ export const HhH1 = styled.div`
   color: white;
   font-family: 'Gobold', sans-serif;
   font-size: 5em;
-  line-height: 1em;
+  ${'' /* line-height: 1em; */}
   padding-bottom: 1em;
 `
 export const HhH2 = styled.div`
   width: 95%;
   max-width:95%;
+  height: auto;
   color: white;
   font-family: 'Gobold', sans-serif;
   font-size: 3em;
-  line-height: 1em;
+  ${'' /* line-height: 1em; */}
   padding-bottom: 0.8em;
 `
 

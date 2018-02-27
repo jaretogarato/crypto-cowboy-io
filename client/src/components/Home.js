@@ -12,7 +12,7 @@ import {
 class Home extends Component {
   render() {
     return (
-      <Container fluid>
+      <Container fluid id={0}>
         <HeroHeader bgImage={TopBg}>
           <HhTextContainer>
             <HhH1>
