@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
 import { NavStyled, NavLogo, NavLinks } from '../css/styledComponents';
 import NavLink from './NavLink';
+import { inlineStyles } from '../css/inlineStyles';
 import '../css/fonts.css';
 import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 
@@ -45,7 +46,7 @@ class NavBarMm extends Component {
         navBgOpacity: 0,
       });
     }
-    console.log("navBgOpacity: " + this.state.navBgOpacity);
+    console.log("this.state.navBgOpacity: " + this.state.navBgOpacity);
   }
 
   getRoute = () => {
@@ -68,8 +69,13 @@ class NavBarMm extends Component {
   render() {
     return (
       <Container>
-        <NavStyled>
-          <NavLogo logoImage={LogoImage} logoWidth={'253px'} />
+        {/* <NavStyled bgColor='rgba(255, 255, 255, 0.2)'> */}
+        <NavStyled navOpacity={this.state.navBgOpacity}>
+          <div style={inlineStyles.logoNavWrap}>
+            <a href="/">
+              <img src={LogoImage} style={inlineStyles.logoNav} />
+            </a>
+          </div>
           <NavLinks>
             {/* <i ref={(ref) => this.scrollIcon = ref} className="fa fa-2x fa-chevron-down">HOWDY</i> */}
             <NavLink name='Home' to='/' isCurrent={this.isRouteCurrent('/')} />

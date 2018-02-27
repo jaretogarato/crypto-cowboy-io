@@ -130,4 +130,14 @@ export const inlineStyles = {
   footerSpacerTop: {
     height: '5em',
   },
+  logoNavWrap: {
+    padding: '0',
+    margin: '0',
+    float: 'left',
+    // opacity: '0.1',
+  },
+  logoNav: {
+    width: '253px',
+    border: 'none',
+  },
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Container } from 'semantic-ui-react';
-import TopBg from '../assets/images/top-bg.jpg';
+import TopBg from '../assets/images/hh-bg-home.jpg';
 import Footer from './partials/Footer';
 import {
   HeroHeader,
@@ -19,7 +19,7 @@ class Home extends Component {
               We Make Blockchain
             </HhH2>
             <HhH1>
-              EASY
+              Better
             </HhH1>
           </HhTextContainer>
         </HeroHeader>

@@ -27,10 +27,8 @@ export const HeroHeader = styled.div`
     background-size: 180%;
     min-height: 20em;
     padding: 10%, 5%;
-    ${'' /* margin-left: -10%; */}
   }
   @media (min-width: 600px) {
-    ${'' /* top: 20%; */}
     width: 160%;
     margin-left: -30%;
     padding: 0 20%;
@@ -53,16 +51,12 @@ export const HhTextContainer = styled.div`
   width: 100%;
   margin: 0;
   padding: 0;
-  ${'' /* text-align: center; */}
-  ${'' /* justify-content: center; */}
 
   @media (max-width: 599px) {
     ${'' /* margin: 15% 3%; */}
   }
 `
 export const HhH1 = styled.h1`
-  ${'' /* width:100%; */}
-  ${'' /* max-width:95%; */}
   color: white;
   font-family: 'Gobold', sans-serif;
   text-align: center;
@@ -71,8 +65,6 @@ export const HhH1 = styled.h1`
   height: 90px;
   margin: 0;
   padding: 0;
-  ${'' /* line-height: 1em; */}
-  ${'' /* padding-bottom: 1em; */}
 
   @media (max-width: 599px) {
     font-size: 65px;
@@ -90,8 +82,6 @@ export const HhH2 = styled.h2`
   height: 55px;
   margin: 0;
   padding: 0;
-  ${'' /* line-height: 1em; */}
-  ${'' /* padding-bottom: 0.8em; */}
 
   @media (max-width: 599px) {
     font-size: 35px;
@@ -106,16 +96,16 @@ export const NavStyled = styled.div`
   top: 0px;
   left: 10%;
   z-index: 10000;
-  background:rgba(255, 255, 255, 0.0);
+  ${'' /* background:rgba(255, 255, 255, 0.0); */}
+  ${'' /* background-color: ${ props => props.bgColor}; */}
   width: 80%;
   min-height: 100px;
   padding: 10px 0;
   text-align: right;
+  border: none;
+  opacity: ${ props => props.navOpacity };
 `
 export const NavLogo = styled.div`
-  ${'' /* min-width: 200px; */}
-  ${'' /* min-height: 100px; */}
-  ${'' /* height: 100%; */}
   width: ${ props => props.logoWidth};
   min-width: ${ props => props.logoWidth};
   background-image: url(${ props => props.logoImage}) !important;
@@ -132,6 +122,7 @@ export const NavLinks = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  opacity: ${ props => props.navOpacity};
   ${'' /* border: 1px solid orange; */}
 `
 export const LinkMm = styled.div`
