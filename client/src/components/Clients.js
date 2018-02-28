@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Container, Card, Icon, Image } from 'semantic-ui-react';
+import { Header, Container, Card, Icon, Image, Link } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-clients.jpg';
 import Footer from './partials/Footer';
 import LogoSunPacific from '../assets/images/sun-pacific.jpg';
@@ -30,22 +30,22 @@ class Clients extends Component {
 
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
-          <Header as='h1' textAlign='center'>Clients</Header>
+          <Header as='h1' textAlign='center'>Select Clients</Header>
           <Card.Group itemsPerRow={2} centered>
             <Card>
               <Image src={LogoSunPacific} />
               <Card.Content>
                 <Card.Header>
                   <a href="http://sunpacificpower.com/">Sun Pacific Power Corp</a></Card.Header>
-                {/* <Card.Meta>Joined in 2016</Card.Meta> */}
-                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+                {/* <Card.Meta>Sun Pacific Power builds competitively priced next-generation solar panel and lighting projects.</Card.Meta> */}
+                <Card.Description>Sun Pacific Power builds competitively priced next-generation solar panel and lighting projects.</Card.Description>
               </Card.Content>
-              {/* <Card.Content extra>
-                <a>
-                  <Icon name='user' />
-                  10 Friends
+              <Card.Content extra>
+                <a href='http://sunpacificpower.com/'>
+                  <Icon name='world' />
+                  sunpacificpower.com
                 </a>
-              </Card.Content> */}
+              </Card.Content>
             </Card>
             <Card>
               <Image src={LogoMoneyTrac} />
@@ -53,14 +53,14 @@ class Clients extends Component {
                 <Card.Header>
                   <a href="https://www.moneytractechnology.com/">MoneyTrac</a></Card.Header>
                 {/* <Card.Meta>Joined in 2016</Card.Meta> */}
-                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+                <Card.Description>MoneyTrac Technology offers businesses operating in a variety of alternative or "high-risk" industries with a broad suite of services that provide them with an opportunity to manage and run their business with optimum efficiency. </Card.Description>
               </Card.Content>
-              {/* <Card.Content extra>
-                <a>
-                  <Icon name='user' />
-                  10 Friends
+              <Card.Content extra>
+                <a href='https://www.moneytractechnology.com/'>
+                  <Icon name='world' />
+                  www.moneytractechnology.com
                 </a>
-              </Card.Content> */}
+              </Card.Content>
             </Card>
             <Card>
               <Image src={LogoUSGold} />
@@ -68,14 +68,14 @@ class Clients extends Component {
                 <Card.Header>
                   <a href="http://www.usgoldinc.com/">US Gold</a></Card.Header>
                 {/* <Card.Meta>Joined in 2016</Card.Meta> */}
-                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+                <Card.Description>Your private gold bullion dealer. US Gold makes buying, selling, and storing gold safe and easy, at industry-leading rates.</Card.Description>
               </Card.Content>
-              {/* <Card.Content extra>
-                <a>
-                  <Icon name='user' />
-                  10 Friends
+              <Card.Content extra>
+                <a href='http://usgoldinc.com/'>
+                  <Icon name='world' />
+                  usgoldinc.com
                 </a>
-              </Card.Content> */}
+              </Card.Content>
             </Card>
             <Card>
               <Image src={LogoOpenNetwork} />
@@ -83,14 +83,14 @@ class Clients extends Component {
                 <Card.Header>
                   <a href="http://www.opennetwork.exchange/">Open Network Exchange</a></Card.Header>
                 {/* <Card.Meta>Joined in 2016</Card.Meta> */}
-                {/* <Card.Description>Daniel is a comedian living in Nashville.</Card.Description> */}
+                <Card.Description>Open Network is the issuer of the ON cryptographic tokens. ON manages cash, real estate investments, gold bullion reserves, and provides a direct exit window for token holders who have successfully completed the qualification process.</Card.Description>
               </Card.Content>
-              {/* <Card.Content extra>
-                <a>
-                  <Icon name='user' />
-                  10 Friends
+              <Card.Content extra>
+                <a href='http://www.opennetwork.exchange/'>
+                  <Icon name='world' />
+                  www.opennetwork.exchange
                 </a>
-              </Card.Content> */}
+              </Card.Content>
             </Card>
           </Card.Group>
           <Header as='h1' /> {/* vertical whitespace */}
