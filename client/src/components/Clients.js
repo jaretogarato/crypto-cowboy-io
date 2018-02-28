@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Header, Container, Card, Icon, Image } from 'semantic-ui-react';
-import TopBg from '../assets/images/top-bg.jpg';
+import TopBg from '../assets/images/hh-bg-clients.jpg';
 import Footer from './partials/Footer';
-import LogoSunPacific from '../assets/images/sun-pacific.png';
-import LogoMoneyTrac from '../assets/images/mtrac.png';
-import LogoUSGold from '../assets/images/us-gold.png';
-import LogoOpenNetwork from '../assets/images/on-blue-shadow.png';
+import LogoSunPacific from '../assets/images/sun-pacific.jpg';
+import LogoMoneyTrac from '../assets/images/mtrac.jpg';
+import LogoUSGold from '../assets/images/us-gold.jpg';
+import LogoOpenNetwork from '../assets/images/open-network.jpg';
 import {
   HeroHeader,
   HhTextContainer,
@@ -31,7 +31,7 @@ class Clients extends Component {
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' textAlign='center'>Clients</Header>
-          <Card.Group itemsPerRow={3} centered>
+          <Card.Group itemsPerRow={2} centered>
             <Card>
               <Image src={LogoSunPacific} />
               <Card.Content>

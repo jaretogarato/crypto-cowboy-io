@@ -17,7 +17,7 @@ export const HeroHeader = styled.div`
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  min-height: 30em;
+  height: 460px;
   width: 100%;
   padding: 0;
   margin: 0;
