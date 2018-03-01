@@ -53,7 +53,7 @@ class Home extends Component {
             <Header as='h1' /> {/* vertical whitespace */}
             <Header as='h1' /> {/* vertical whitespace */}
             <Grid.Row>
-              <Grid.Column width={4} textAlign='center'>
+              <Grid.Column width={4}>
                 <a href='/clients'><Image src={IconClients} size='small' align='center' /></a>
               </Grid.Column>
               <Grid.Column width={4}>
