@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Container, Grid } from 'semantic-ui-react';
-import TopBg from '../assets/images/top-bg.jpg';
+import TopBg from '../assets/images/hh-bg-contact.jpg';
 import Footer from './partials/Footer';
 import SubmitForm from './partials/SubmitForm';
 import {

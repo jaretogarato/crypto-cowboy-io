@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Container, Grid, Icon } from 'semantic-ui-react';
-import TopBg from '../assets/images/top-bg.jpg';
+import TopBg from '../assets/images/hh-bg-regulatory.jpg';
 import Footer from './partials/Footer';
 import {
   HeroHeader,

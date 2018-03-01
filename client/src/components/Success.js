@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Grid, Container, Segment, Image, List, Item, Divider, Card } from 'semantic-ui-react';
-import TopBg from '../assets/images/top-bg.jpg';
+import TopBg from '../assets/images/hh-bg-success.jpg';
 import {
   HeroHeader,
   HhTextContainer,
@@ -19,10 +19,11 @@ class Success extends Component {
           <HeroHeader bgImage={TopBg}>
             <HhTextContainer>
               <HhH1>
-                Key Message
+                Success!
               </HhH1>
+              <br />
               <HhH2>
-                Supporting Message
+                WE'LL BE IN TOUCH SHORTLY
               </HhH2>
             </HhTextContainer>
           </HeroHeader>
@@ -39,37 +40,26 @@ class Success extends Component {
               </Grid.Column>
               <Grid.Column width={14}>
                 <Header as='h3' align='center'>
-                  H3 header action.
+                  Thank you for contacting us. We'll be in touch soon — typically within one business day.
                 </Header>
                 <Header as='h3'>&nbsp;</Header>
                 <Header as='h2' align='center'>
-                  H2 header action?
+                  <a href='/'>Return to home page.</a>
                 </Header>
               </Grid.Column>
               <Grid.Column width={1}>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
-              <Grid.Column width={16}>
-                <Divider />
-                <Header as='h3'>
-                  Introducing Crypto Cowboy
-                </Header>
-                WINDMILLS DO NOT WORK THAT WAY! GOOD NIGHT!
-                <Divider />
-              </Grid.Column>
-            </Grid.Row>
+
             <Grid.Row>
               <Grid.Column width={16}>
                 <Header as='h2' align='center'>
-                  When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film!
                 </Header>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column width={16}>
                 <Header as='h4' align='center'>
-                  Anyone who laughs is a communist!
                 </Header>
               </Grid.Column>
             </Grid.Row>
@@ -80,7 +70,7 @@ class Success extends Component {
           </Grid>
         </Container>
         <Container>
-          <Grid columns='equal' padded>
+          {/* <Grid columns='equal' padded>
             <Grid.Row>
               <Grid.Column align='center'>
                 <Card.Group itemsPerRow={3}>
@@ -149,7 +139,7 @@ class Success extends Component {
                 </Segment>
               </Grid.Column>
             </Grid.Row>
-          </Grid>
+          </Grid> */}
         </Container>
         <Container fluid>
           <Grid>
@@ -160,11 +150,6 @@ class Success extends Component {
                 </Segment>
               </Grid.Column>
             </Grid.Row> */}
-            <Grid.Row>
-              <Grid.Column width={16}>
-                <SubmitForm />
-              </Grid.Column>
-            </Grid.Row>
           </Grid>
         </Container>
         <Footer />
