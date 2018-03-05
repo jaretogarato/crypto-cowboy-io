@@ -5,14 +5,23 @@ import IconClients from '../../assets/images/icon-clients-ltblue.png';
 import IconContact from '../../assets/images/icon-contact-ltblue.png';
 import IconRegulatory from '../../assets/images/icon-regulatory-ltblue.png';
 import IconServices from '../../assets/images/icon-services-ltblue.png';
-import IconCoinClients from '../../assets/images/icon-services-coin-default.png';
-import IconCoinRegulatory from '../../assets/images/icon-regulatory-coin-default.png';
-import IconCoinContact from '../../assets/images/icon-contact-coin-default.png';
+
 import IconCoinClients from '../../assets/images/icon-clients-coin-default.png';
 import IconCoinClientsHover from '../../assets/images/icon-clients-coin-hover.png';
-import IconCoinServicesHover from '../../assets/images/icon-services-coin-hover.png';
+
+import IconCoinRegulatory from '../../assets/images/icon-regulatory-coin-default.png';
 import IconCoinRegulatoryHover from '../../assets/images/icon-regulatory-coin-hover.png';
+
+import IconCoinServices from '../../assets/images/icon-services-coin-default.png';
+import IconCoinServicesHover from '../../assets/images/icon-services-coin-hover.png';
+
+import IconCoinContact from '../../assets/images/icon-contact-coin-default.png';
 import IconCoinContactHover from '../../assets/images/icon-contact-coin-hover.png';
+
+
+
+
+
 
 // import LogoMed from '../../assets/images/ims-logo-med.png';
 
