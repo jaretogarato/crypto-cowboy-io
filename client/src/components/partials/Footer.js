@@ -7,7 +7,7 @@ import '../../css/inlineStyles.js';
 class Footer extends React.Component {
   render() {
     return (
-        <div>
+      <div>
         <Container>
           <Grid>
             <Grid.Row style={inlineStyles.footerSpacerTop} />
@@ -15,7 +15,6 @@ class Footer extends React.Component {
         </Container>
         <Container fluid style={inlineStyles.darkGrayBg}>
           <Grid padded stackable>
-
             <Grid.Row>
               <Grid.Column width={16}>
                 <span style={inlineStyles.lightGrayTextPadLeftCenter}>
@@ -34,7 +33,6 @@ class Footer extends React.Component {
                 </span>
               </Grid.Column>
             </Grid.Row>
-
           </Grid>
         </Container>
       </div>

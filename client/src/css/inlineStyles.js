@@ -128,7 +128,10 @@ export const inlineStyles = {
     textAlign: 'center',
   },
   footerSpacerTop: {
-    height: '5em',
+    height: '15em',
+  },
+  mainLinksSpacerTop: {
+    height: '10em',
   },
   logoNavWrap: {
     padding: '0',
