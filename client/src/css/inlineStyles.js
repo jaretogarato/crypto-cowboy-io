@@ -143,4 +143,11 @@ export const inlineStyles = {
     width: '253px',
     border: 'none',
   },
+  mainLinks: {
+    align: 'center',
+    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    flexAlign: 'center',
+  },
 }
