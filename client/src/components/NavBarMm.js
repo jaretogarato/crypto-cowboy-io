@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Container, Header, Image } from 'semantic-ui-react';
-import Sticky from 'react-sticky-el';
+// import Sticky from 'react-sticky-el';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
@@ -8,6 +8,7 @@ import { NavStyled, NavLogo, NavLinks } from '../css/styledComponents';
 import NavLink from './NavLink';
 import { inlineStyles } from '../css/inlineStyles';
 import '../css/fonts.css';
+import '../css/semantic-ui/semantic.min.css';
 import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 
 class NavBarMm extends Component {
@@ -96,3 +97,5 @@ const mapStateToProps = state => {
 };
 
 export default withRouter(connect(mapStateToProps)(NavBarMm));
+
+// export default NavBarMm;
