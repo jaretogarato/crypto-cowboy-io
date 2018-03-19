@@ -1,4 +1,4 @@
-.navlink {
+.navlink, .navlink:visited {
   color: #fff;
   -webkit-transition: color 0.5s; /* Safari */
   transition: color 0.5s;

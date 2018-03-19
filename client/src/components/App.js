@@ -9,14 +9,14 @@ import Home from './Home';
 import Clients from './Clients';
 import Services from './Services';
 import Regulatory from './Regulatory';
-import Press from './Press';
+// import Press from './Press';
 import Contact from './Contact';
 import Success from './Success';
 import '../css/fonts.css';
 import '../css/semantic-ui/semantic.min.css';
-import ProtectedRoute from './ProtectedRoute';
+// import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
-import FetchUser from './FetchUser';
+// import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {

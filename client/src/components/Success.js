@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Grid, Container, Segment, Image, List, Item, Divider, Card } from 'semantic-ui-react';
+import { Header, Grid, Container } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-success.jpg';
 import {
   HeroHeader,
@@ -7,9 +7,9 @@ import {
   HhH1,
   HhH2,
 } from '../css/styledComponents';
-import SubmitForm from './partials/SubmitForm';
+// import SubmitForm from './partials/SubmitForm';
 import Footer from './partials/Footer';
-import { inlineStyles } from '../css/inlineStyles.js';
+// import { inlineStyles } from '../css/inlineStyles.js';
 
 class Success extends Component {
   render() {

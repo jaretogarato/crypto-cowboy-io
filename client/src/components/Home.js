@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Container, Grid, Image } from 'semantic-ui-react';
+import { Header, Container, Grid } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-home-02.png';
 import Cowboy from '../assets/images/cowboy-2.jpg';
 import MainLinks from './partials/MainLinks';
@@ -34,7 +34,7 @@ class Home extends Component {
             <Grid.Row>
               <Grid.Column width={2} />
               <Grid.Column width={12}>
-                <img src={Cowboy} />
+                <img src={Cowboy} alt="Cowboy"/>
               </Grid.Column>
               <Grid.Column width={2} />
             </Grid.Row>

@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Header, Form, Button, Segment, Dropdown, Grid, Container, TextArea } from 'semantic-ui-react';
 // import { connect } from 'react-redux';
 // import { addLead } from '../../actions/leads';
-import { flash } from '../../actions/flash';
-import { setFlash } from '../../actions/flash';
+// import { flash } from '../../actions/flash';
+// import { setFlash } from '../../actions/flash';
 import { inlineStyles } from '../../css/inlineStyles.js';
 // import { titleOptions, phoneTypeOptions, stateOptions } from './FormOptions.js';
 import { titleOptions } from './FormOptions.js';
@@ -44,11 +44,11 @@ class SubmitForm extends Component {
   handleOptionChange = event => {
     const id = event.target.id;
     const value = event.target.value;
-    const options = event.target.options;
+    // const options = event.target.options;
     this.setState({ [id]: value });
     console.log(event.target);
     console.log(event.target.value);
-    console.log(event.target.options);
+    // console.log(event.target.options);
     console.log(this.state);
   }
 

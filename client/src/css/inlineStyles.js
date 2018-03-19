@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // import PageHeaderMountains from '../images/mountains.jpg';
 
 export const inlineStyles = {
@@ -55,11 +55,11 @@ export const inlineStyles = {
     padding: '25px',
     textAlign: 'center',
   },
-  darkGrayBg: {
-    backgroundColor: '#363232',
-    padding: '25px',
-    textAlign: 'center',
-  },
+  // darkGrayBg: {
+  //   backgroundColor: '#363232',
+  //   padding: '25px',
+  //   textAlign: 'center',
+  // },
   h1: {
     color: '#FFF',
     fontSize: '3em',

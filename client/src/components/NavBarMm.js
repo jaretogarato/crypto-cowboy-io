@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { Menu, Container, Header, Image } from 'semantic-ui-react';
-// import Sticky from 'react-sticky-el';
-import { Link, withRouter } from 'react-router-dom';
+import { Container } from 'semantic-ui-react';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { handleLogout } from '../actions/auth';
-import { NavStyled, NavLogo, NavLinks } from '../css/styledComponents';
-import NavLink from './NavLink';
+// import { handleLogout } from '../actions/auth';
 import { inlineStyles } from '../css/inlineStyles';
+import { NavStyled, NavLinks } from '../css/styledComponents';
+import NavLink from './NavLink';
+import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 import '../css/fonts.css';
 import '../css/semantic-ui/semantic.min.css';
-import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 
 class NavBarMm extends Component {
   state = {transform: 0.0, navBgOpacity: 1.0, navBgHeight: 100, currentRoute: '/'};
@@ -58,7 +57,7 @@ class NavBarMm extends Component {
   }
 
   isRouteCurrent = (route) => {
-    if (this.state.currentRoute == route){
+    if (this.state.currentRoute === route){
       // console.log('YES');
       return('yes');
     } else {
@@ -74,7 +73,7 @@ class NavBarMm extends Component {
         <NavStyled navOpacity={this.state.navBgOpacity}>
           <div style={inlineStyles.logoNavWrap}>
             <a href="/">
-              <img src={LogoImage} style={inlineStyles.logoNav} />
+              <img src={LogoImage} alt="Crypto Cowboy Logo" style={inlineStyles.logoNav} />
             </a>
           </div>
           <NavLinks navOpacity={this.state.navBgOpacity}>

@@ -1,10 +1,6 @@
 import React from 'react';
-import { Segment, Image, Container, Grid, Icon, List, Header } from 'semantic-ui-react';
+import { Image, Grid, Header } from 'semantic-ui-react';
 import { inlineStyles } from '../../css/inlineStyles';
-// import IconClients from '../../assets/images/icon-clients-ltblue.png';
-// import IconContact from '../../assets/images/icon-contact-ltblue.png';
-// import IconRegulatory from '../../assets/images/icon-regulatory-ltblue.png';
-// import IconServices from '../../assets/images/icon-services-ltblue.png';
 
 import IconCoinClients from '../../assets/images/icon-clients-coin-default.png';
 import IconCoinClientsHover from '../../assets/images/icon-clients-coin-hover.png';

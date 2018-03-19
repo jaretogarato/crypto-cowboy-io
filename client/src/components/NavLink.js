@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { NavStyled, NavLogo, NavLinks, LinkMm } from '../css/styledComponents';
+// import { NavStyled, NavLogo, NavLinks, LinkMm } from '../css/styledComponents';
+import { LinkMm } from '../css/styledComponents';
 import '../css/styles.css';
 
 class NavLink extends Component {
@@ -8,7 +9,7 @@ class NavLink extends Component {
     const { name, to, isCurrent } = this.props;
     let linkClass = '';
     if (isCurrent){
-      (isCurrent == 'yes') ? linkClass="navlink-current" : linkClass="navlink";
+      (isCurrent === 'yes') ? linkClass="navlink-current" : linkClass="navlink";
     } else {
       return (
         <p>Missing "current" status for link</p>
