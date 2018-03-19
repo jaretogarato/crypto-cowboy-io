@@ -13,6 +13,7 @@ import Press from './Press';
 import Contact from './Contact';
 import Success from './Success';
 import '../css/fonts.css';
+import '../css/semantic-ui/semantic.min.css';
 import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
