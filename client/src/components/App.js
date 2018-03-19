@@ -26,7 +26,7 @@ class App extends Component {
         {/* <NavBar /> */}
         <NavBarMm />
         <Flash />
-        <FetchUser>
+        {/* <FetchUser> */}
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/clients' component={Clients} />
@@ -39,7 +39,7 @@ class App extends Component {
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />
           </Switch>
-        </FetchUser>
+        {/* </FetchUser> */}
       </div>
     );
   }
