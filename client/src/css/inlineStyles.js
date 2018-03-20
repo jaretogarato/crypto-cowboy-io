@@ -142,7 +142,12 @@ export const inlineStyles = {
   logoNav: {
     width: '253px',
     border: 'none',
+    backgroundColor: 'transparent',
   },
+  // imgHover: {
+  //   width: 'inherit',
+  //   backgroundColor: 'transparent',
+  // },
   mainLinks: {
     align: 'center',
     textAlign: 'center',
