@@ -23,3 +23,13 @@
 .navlink-error {
   color: #F00;
 }
+.logo-nav-wrap {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.logo-nav, .logo-nav:hover {
+  width: 253px;
+  border: none;
+  background-color: transparent;
+}

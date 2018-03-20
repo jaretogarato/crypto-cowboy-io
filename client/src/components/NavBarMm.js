@@ -8,6 +8,7 @@ import { NavStyled, NavLinks } from '../css/styledComponents';
 import NavLink from './NavLink';
 import LogoImage from '../assets/images/cryptocowboy-logo-nav.png';
 import '../css/fonts.css';
+import '../css/styles.css';
 import '../css/semantic-ui/semantic.min.css';
 
 class NavBarMm extends Component {
@@ -71,9 +72,14 @@ class NavBarMm extends Component {
       <Container>
         {/* <NavStyled bgColor='rgba(255, 255, 255, 0.2)'> */}
         <NavStyled navOpacity={this.state.navBgOpacity}>
-          <div style={inlineStyles.logoNavWrap}>
+          {/* <div style={inlineStyles.logoNavWrap}>
             <a href="/">
               <img src={LogoImage} alt="Crypto Cowboy Logo" style={inlineStyles.logoNav} />
+            </a>
+          </div> */}
+          <div className="logo-nav-wrap">
+            <a href="/">
+              <img src={LogoImage} alt="Crypto Cowboy Logo" className='logo-nav' />
             </a>
           </div>
           <NavLinks navOpacity={this.state.navBgOpacity}>

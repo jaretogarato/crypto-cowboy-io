@@ -133,17 +133,17 @@ export const inlineStyles = {
   mainLinksSpacerTop: {
     height: '10em',
   },
-  logoNavWrap: {
-    padding: '0',
-    margin: '0',
-    float: 'left',
-    // opacity: '0.1',
-  },
-  logoNav: {
-    width: '253px',
-    border: 'none',
-    backgroundColor: 'transparent',
-  },
+  // logoNavWrap: {
+  //   padding: '0',
+  //   margin: '0',
+  //   float: 'left',
+  //   // opacity: '0.1',
+  // },
+  // logoNav: {
+  //   width: '253px',
+  //   border: 'none',
+  //   backgroundColor: 'transparent',
+  // },
   // imgHover: {
   //   width: 'inherit',
   //   backgroundColor: 'transparent',
