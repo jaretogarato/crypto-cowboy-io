@@ -5,16 +5,18 @@
 }
 .navlink:hover {
   color: #1fccdc;
+  background-color: transparent;
   -webkit-transition: color 0.5s; /* Safari */
   transition: color 0.5s;
 }
-.navlink-current {
+.navlink-current, .navlink-current:visited {
   color: #1fccdc;
   -webkit-transition: color 0.5s; /* Safari */
   transition: color 0.5s;
 }
 .navlink-current:hover {
   color: #fff;
+  background-color: transparent;
   -webkit-transition: color 0.5s; /* Safari */
   transition: color 0.5s;
 }
