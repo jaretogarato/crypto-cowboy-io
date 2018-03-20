@@ -12,6 +12,7 @@ import Regulatory from './Regulatory';
 // import Press from './Press';
 import Contact from './Contact';
 import Success from './Success';
+import Leads from './Leads';
 import '../css/fonts.css';
 import '../css/semantic-ui/semantic.min.css';
 // import ProtectedRoute from './ProtectedRoute';
@@ -37,6 +38,7 @@ class App extends Component {
             <Route path='/success' component={Success} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
+            <AuthRoute path='/leads' component={Leads} />
             <Route component={NoMatch} />
           </Switch>
         {/* </FetchUser> */}

@@ -3,6 +3,7 @@ class Api::LeadsController < ApplicationController
     # render json: Movie.select(:id, :title, :release_year, :director)
     # @api_movies = Movie.all
     render json: Lead.all
+    # render json: Post.all.to_json( only: [:id, :title], methods: :img_url)
   end
 
   def show
