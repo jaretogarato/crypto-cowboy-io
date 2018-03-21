@@ -31,5 +31,7 @@
 .logo-nav, .logo-nav:hover {
   width: 253px;
   border: none;
+}
+.logo-nav:hover {
   background-color: transparent;
 }
