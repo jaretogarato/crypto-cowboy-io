@@ -25,13 +25,10 @@ class NavBarMm extends Component {
   }
 
   handleScroll = (event) => {
-    // let scrollTop = event.srcElement.body.scrollTop;
-    // let rootContainer = document.getElementById("root");
-    // console.log(rootContainer);
     let rootContainerBoundingRect = document.getElementById('root').getBoundingClientRect();
     let scrollY = rootContainerBoundingRect.y;
-    // console.log(rootContainerBoundingRect);
-    console.log('scrollY: ' + scrollY);
+
+    //console.log('scrollY: ' + scrollY);
 
     if (scrollY >= -50 ){
       this.setState({
@@ -47,7 +44,7 @@ class NavBarMm extends Component {
         navBgOpacity: 0,
       });
     }
-    console.log("this.state.navBgOpacity: " + this.state.navBgOpacity);
+    // console.log("this.state.navBgOpacity: " + this.state.navBgOpacity);
   }
 
   getRoute = () => {
@@ -59,10 +56,8 @@ class NavBarMm extends Component {
 
   isRouteCurrent = (route) => {
     if (this.state.currentRoute === route){
-      // console.log('YES');
       return('yes');
     } else {
-      // console.log('NO');
       return('no');
     }
   }
@@ -70,20 +65,13 @@ class NavBarMm extends Component {
   render() {
     return (
       <Container>
-        {/* <NavStyled bgColor='rgba(255, 255, 255, 0.2)'> */}
         <NavStyled navOpacity={this.state.navBgOpacity}>
-          {/* <div style={inlineStyles.logoNavWrap}>
-            <a href="/">
-              <img src={LogoImage} alt="Crypto Cowboy Logo" style={inlineStyles.logoNav} />
-            </a>
-          </div> */}
           <div className="logo-nav-wrap">
             <a href="/">
               <img src={LogoImage} alt="Crypto Cowboy Logo" className='logo-nav' />
             </a>
           </div>
           <NavLinks navOpacity={this.state.navBgOpacity}>
-            {/* <i ref={(ref) => this.scrollIcon = ref} className="fa fa-2x fa-chevron-down">HOWDY</i> */}
             <NavLink name='Home' to='/' isCurrent={this.isRouteCurrent('/')} />
             <NavLink name='Clients' to='/clients' isCurrent={this.isRouteCurrent('/clients')} />
             <NavLink name='Services' to='/services' isCurrent={this.isRouteCurrent('/services')} />
@@ -102,5 +90,3 @@ const mapStateToProps = state => {
 };
 
 export default withRouter(connect(mapStateToProps)(NavBarMm));
-
-// export default NavBarMm;
