@@ -28,7 +28,7 @@
   margin: 0;
   float: left;
 }
-.logo-nav, .logo-nav:hover {
+.logo-nav {
   width: 253px;
   border: none;
 }

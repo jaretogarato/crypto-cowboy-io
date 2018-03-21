@@ -68,7 +68,7 @@ class NavBarMm extends Component {
         <NavStyled navOpacity={this.state.navBgOpacity}>
           <div className="logo-nav-wrap">
             <a href="/" className='logo-nav'>
-              <img src={LogoImage} alt="Crypto Cowboy Logo" />
+              <img src={LogoImage} alt="Crypto Cowboy Logo" className='logo-nav' />
             </a>
           </div>
           <NavLinks navOpacity={this.state.navBgOpacity}>
