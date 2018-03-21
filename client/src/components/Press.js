@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Header, Container, Grid } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-press.png';
 import Footer from './partials/Footer';
-import VideoReplenish from './partials/VideoReplenish';
+import VideoChrisSF from './partials/VideoChrisSF';
 import {
   HeroHeader,
   HhTextContainer,
@@ -27,15 +27,17 @@ class Press extends Component {
 
         <Container>
           <Header as='h1' /> {/* vertical whitespace */}
-          <Header as='h1' textAlign='center'>Press</Header>
+          <Header as='h2' textAlign='center'>Christopher Johnson in San Francisco</Header>
           <Grid stackable>
             <Grid.Row>
-              <Grid.Column width={6}>
-                <VideoReplenish />
+              <Grid.Column width={2} />
+              <Grid.Column width={12} textAlign='center'>
+                <VideoChrisSF />
               </Grid.Column>
-              <Grid.Column width={10}>
-                Crypto Cowbow will be speaking soon in Dallas on our new platform client! Details will be posted in the next day or two. 
-              </Grid.Column>
+              <Grid.Column width={2} />
+              {/* <Grid.Column width={10}>
+                Crypto Cowboy will be speaking soon in Dallas on our new platform client! Details will be posted in the next day or two.
+              </Grid.Column> */}
             </Grid.Row>
           </Grid>
           <Header as='h1' /> {/* vertical whitespace */}
