@@ -9,7 +9,7 @@ import Home from './Home';
 import Clients from './Clients';
 import Services from './Services';
 import Regulatory from './Regulatory';
-// import Press from './Press';
+import Press from './Press';
 import Contact from './Contact';
 import Success from './Success';
 import Leads from './Leads';
@@ -33,7 +33,7 @@ class App extends Component {
             <Route path='/clients' component={Clients} />
             <Route path='/services' component={Services} />
             <Route path='/regulatory' component={Regulatory} />
-            {/* <Route path='/press' component={Press} /> */}
+            <Route path='/press' component={Press} />
             <Route path='/contact' component={Contact} />
             <Route path='/success' component={Success} />
             <AuthRoute exact path='/login' component={Login} />

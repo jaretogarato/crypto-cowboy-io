@@ -67,8 +67,8 @@ class NavBarMm extends Component {
       <Container>
         <NavStyled navOpacity={this.state.navBgOpacity}>
           <div className="logo-nav-wrap">
-            <a href="/">
-              <img src={LogoImage} alt="Crypto Cowboy Logo" className='logo-nav' />
+            <a href="/" className='logo-nav'>
+              <img src={LogoImage} alt="Crypto Cowboy Logo" />
             </a>
           </div>
           <NavLinks navOpacity={this.state.navBgOpacity}>
@@ -76,7 +76,7 @@ class NavBarMm extends Component {
             <NavLink name='Clients' to='/clients' isCurrent={this.isRouteCurrent('/clients')} />
             <NavLink name='Services' to='/services' isCurrent={this.isRouteCurrent('/services')} />
             <NavLink name='Regulatory' to='/regulatory' isCurrent={this.isRouteCurrent('/regulatory')} />
-            {/* <NavLink name='Press' to='/press' isCurrent={this.isRouteCurrent('/press')} /> */}
+            <NavLink name='Press' to='/press' isCurrent={this.isRouteCurrent('/press')} />
             <NavLink name='Contact' to='/contact' isCurrent={this.isRouteCurrent('/contact')} />
           </NavLinks>
         </NavStyled>
