@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Container, Grid } from 'semantic-ui-react';
-import TopBg from '../assets/images/top-bg.jpg';
+import TopBg from '../assets/images/hh-bg-press.png';
 import Footer from './partials/Footer';
 import VideoReplenish from './partials/VideoReplenish';
 import {
@@ -34,7 +34,7 @@ class Press extends Component {
                 <VideoReplenish />
               </Grid.Column>
               <Grid.Column width={10}>
-                content
+                Crypto Cowbow will be speaking soon in Dallas on our new platform client! Details will be posted in the next day or two. 
               </Grid.Column>
             </Grid.Row>
           </Grid>
