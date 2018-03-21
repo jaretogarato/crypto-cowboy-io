@@ -28,7 +28,7 @@ class Footer extends React.Component {
                     info@cryptocowboy.io
                   </p>
                   <p>
-                    Copyright © 2018 Crypto Cowboy<br />
+                    Copyright © 2018 | Crypto Cowboy<br />
                   </p>
                 </span>
               </Grid.Column>
