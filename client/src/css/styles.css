@@ -33,9 +33,10 @@
   border: none;
 }
 .logo-nav:hover, .logo-nav:visited {
-  background-color: transparent;
+  color: none !important;
+  background-color: transparent !important;
 }
-a:visited {
+/* a:visited {
   color: inherit;
   background-color: transparent;
-}
+} */
