@@ -32,6 +32,10 @@
   width: 253px;
   border: none;
 }
-.logo-nav:hover {
+.logo-nav:hover, .logo-nav:visited {
+  background-color: transparent;
+}
+a:visited {
+  color: inherit;
   background-color: transparent;
 }
