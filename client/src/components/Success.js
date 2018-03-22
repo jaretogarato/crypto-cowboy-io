@@ -9,6 +9,7 @@ import {
 } from '../css/styledComponents';
 // import SubmitForm from './partials/SubmitForm';
 import Footer from './partials/Footer';
+import MainLinks from './partials/MainLinks';
 // import { inlineStyles } from '../css/inlineStyles.js';
 
 class Success extends Component {
@@ -152,6 +153,7 @@ class Success extends Component {
             </Grid.Row> */}
           </Grid>
         </Container>
+        <MainLinks />
         <Footer />
       </div>
     );

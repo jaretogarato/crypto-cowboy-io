@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header, Container, Card, Icon, Image } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-clients.jpg';
 import Footer from './partials/Footer';
+import MainLinks from './partials/MainLinks';
 import LogoSunPacific from '../assets/images/sun-pacific.jpg';
 import LogoMoneyTrac from '../assets/images/mtrac.jpg';
 import LogoUSGold from '../assets/images/us-gold.jpg';
@@ -96,6 +97,7 @@ class Clients extends Component {
           <Header as='h1' />
           <Header as='h1' />
         </Container>
+        <MainLinks />
         <Footer />
       </Container>
     );

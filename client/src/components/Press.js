@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header, Container, Grid } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-press.png';
 import Footer from './partials/Footer';
+import MainLinks from './partials/MainLinks';
 import VideoChrisSF from './partials/VideoChrisSF';
 import {
   HeroHeader,
@@ -43,6 +44,7 @@ class Press extends Component {
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' /> {/* vertical whitespace */}
         </Container>
+        <MainLinks />
         <Footer />
       </Container>
     );

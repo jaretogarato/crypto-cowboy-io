@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header, Container, Grid, Icon } from 'semantic-ui-react';
 import TopBg from '../assets/images/hh-bg-regulatory.jpg';
 import Footer from './partials/Footer';
+import MainLinks from './partials/MainLinks';
 import {
   HeroHeader,
   HhTextContainer,
@@ -43,6 +44,7 @@ class Regulatory extends Component {
           <Header as='h1' /> {/* vertical whitespace */}
           <Header as='h1' /> {/* vertical whitespace */}
         </Container>
+        <MainLinks />
         <Footer />
       </Container>
     );
